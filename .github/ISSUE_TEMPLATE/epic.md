@@ -1,14 +1,26 @@
----
-name: Epic
-about: Suggest an Epic to achieve a product goal
-title: ''
-labels: ''
-assignees: ''
-
----
-
-**Is your epic request related to a business goal? Please describe.**
-A clear and concise description of what the business goal is.
-
-**Additional context**
-Add any other context or screenshots about the feature request here.
+name: New Epic
+description: Suggest or request a new epic
+labels: ["product increment"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please fill out the sections below to properly describe the new epic you are suggesting.
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the epic
+        placeholder: User authentication and authorization
+    validations:
+      required: true
+  - type: textarea
+    id: businessgoal
+    attributes:
+      label: This is required so
+      placeholder: Authorized Users can use the app  
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      placeholder: |
+        Add any other context or screenshots about the feature request here.
