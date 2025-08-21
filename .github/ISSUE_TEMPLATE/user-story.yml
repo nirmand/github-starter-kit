@@ -28,13 +28,6 @@ body:
       description: "List the acceptance criteria as a bulleted list."
       placeholder: "- Criterion one\n- Criterion two\n- Criterion three"
 
-  - type: input
-    id: parent_epic
-    attributes:
-      label: Parent Epic
-      description: "Provide a link to the Epic this user story belongs to. Only a link to an Epic issue is allowed."
-      placeholder: "https://github.com/your-repo/issues/epic_number"
-
   - type: dropdown
     id: status
     attributes:
