@@ -1,0 +1,47 @@
+name: Epic Issue
+description: Use this template to create an Epic for tracking work.
+title: "[Epic] "
+labels: ["Increment"]
+assignees: []
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Title
+      description: "Provide a concise title for this epic."
+      placeholder: "Epic title"
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: "Enter a detailed description of the epic."
+      placeholder: "Provide detailed description of the epic..."
+      required: true
+
+  - type: input
+    id: assigned_to
+    attributes:
+      label: Assigned To
+      description: "Enter the GitHub username of the person responsible for this epic."
+      placeholder: "username"
+      required: true
+
+  - type: dropdown
+    id: status
+    attributes:
+      label: Status
+      description: "Select the current status of this epic."
+      options:
+        - "New"
+        - "Active"
+        - "Done"
+      required: true
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional Context
+      description: "Provide any additional context (e.g., wireframes, documents) or attach a file by dragging it into the description."
+      placeholder: "Additional context, links, or instructions..."
