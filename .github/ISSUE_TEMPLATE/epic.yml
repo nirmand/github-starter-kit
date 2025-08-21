@@ -18,13 +18,6 @@ body:
       description: "Describe which business/ product goal is achieved through this Epic"
       placeholder: "Example: I want authentication and authorization implemented so that my users can use this app."
   
-  - type: textarea
-    id: additional_context
-    attributes:
-      label: Additional Context
-      description: "Provide any additional context (e.g., wireframes, documents). You can attach files by dragging them into the issue body."
-      placeholder: "Additional context, links, or instructions..."
-
   - type: dropdown
     id: status
     attributes:
