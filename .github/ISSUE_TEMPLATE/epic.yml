@@ -11,7 +11,7 @@ body:
       description: "Enter a detailed description of the epic."
       placeholder: "Provide detailed description of the epic."
       
-  - type: input
+  - type: textarea
     id: businessgoal
     attributes:
       label: Business/ Product Goal
