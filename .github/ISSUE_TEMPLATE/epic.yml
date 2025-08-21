@@ -10,7 +10,6 @@ body:
       label: Title
       description: "Provide a concise title for this epic."
       placeholder: "Epic title"
-      required: true
 
   - type: textarea
     id: description
@@ -18,7 +17,6 @@ body:
       label: Description
       description: "Enter a detailed description of the epic."
       placeholder: "Provide detailed description of the epic..."
-      required: true
 
   - type: input
     id: assigned_to
@@ -26,7 +24,6 @@ body:
       label: Assigned To
       description: "Enter the GitHub username of the person responsible for this epic."
       placeholder: "username"
-      required: true
 
   - type: dropdown
     id: status
@@ -37,11 +34,10 @@ body:
         - "New"
         - "Active"
         - "Done"
-      required: true
 
   - type: textarea
     id: additional_context
     attributes:
       label: Additional Context
-      description: "Provide any additional context (e.g., wireframes, documents) or attach a file by dragging it into the description."
+      description: "Provide any additional context (e.g., wireframes, documents). You can attach files by dragging them into the issue body."
       placeholder: "Additional context, links, or instructions..."
