@@ -1,0 +1,48 @@
+name: User Story
+description: Use this template to create a User Story linked to an Epic.
+title: "[User Story] "
+labels: []
+assignees: []
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: "Provide a detailed description of the user story."
+      placeholder: "Describe the story"
+  
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: "Select the priority of this user story."
+      options:
+        - "High"
+        - "Medium"
+        - "Low"
+
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Acceptance Criteria
+      description: "List the acceptance criteria as a bulleted list."
+      placeholder: "- Criterion one\n- Criterion two\n- Criterion three"
+
+  - type: input
+    id: parent_epic
+    attributes:
+      label: Parent Epic
+      description: "Provide a link to the Epic this user story belongs to. Only a link to an Epic issue is allowed."
+      placeholder: "https://github.com/your-repo/issues/epic_number"
+
+  - type: dropdown
+    id: status
+    attributes:
+      label: Status
+      description: "Select the status of this user story."
+      options:
+        - "New"
+        - "Ready"
+        - "In Progress"
+        - "Test"
+        - "Done"
