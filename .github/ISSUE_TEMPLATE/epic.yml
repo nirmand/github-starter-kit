@@ -9,15 +9,23 @@ body:
     attributes:
       label: Description
       description: "Enter a detailed description of the epic."
-      placeholder: ""
       
   - type: input
     id: businessgoal
     attributes:
       label: Business/ Product Goal
       description: "Short description of business value achieved through this Epic"
-      placeholder: ""
-  
+
+  - type: dropdown
+    id: business_priority
+    attributes:
+      label: Business Priority
+      description: "Select the business priority of this epic."
+      options:
+        - "High"
+        - "Medium"
+        - "Low"
+        
   - type: dropdown
     id: status
     attributes:
