@@ -4,25 +4,25 @@ title: "[Epic] "
 labels: ["Increment"]
 assignees: []
 body:
-  - type: input
-    id: title
-    attributes:
-      label: Title
-      description: "Provide a concise title for this epic."
-      placeholder: "Epic title"
-
   - type: textarea
     id: description
     attributes:
       label: Description
       description: "Enter a detailed description of the epic."
-      placeholder: "Provide detailed description of the epic..."
-
+      placeholder: "Provide detailed description of the epic."
+      
+  - type: input
+    id: businessgoal
+    attributes:
+      label: Business/ Product Goal
+      description: "Describe which business/ product goal is achieved through this Epic"
+      placeholder: "Example: I want authentication and authorization implemented so that my users can use this app."
+  
   - type: input
     id: assigned_to
     attributes:
       label: Assigned To
-      description: "Enter the GitHub username of the person responsible for this epic."
+      description: "Assign to person responsible for this epic."
       placeholder: "username"
 
   - type: dropdown
