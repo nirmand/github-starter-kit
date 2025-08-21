@@ -1,4 +1,4 @@
-name: Epic Issue
+name: Epic
 description: Use this template to create an Epic for tracking work.
 title: "[Epic] "
 labels: ["Increment"]
