@@ -9,14 +9,14 @@ body:
     attributes:
       label: Description
       description: "Enter a detailed description of the epic."
-      placeholder: "Provide detailed description of the epic."
+      placeholder: ""
       
-  - type: textarea
+  - type: input
     id: businessgoal
     attributes:
       label: Business/ Product Goal
-      description: "Describe which business/ product goal is achieved through this Epic"
-      placeholder: "Example: I want authentication and authorization implemented so that my users can use this app."
+      description: "Short description of business value achieved through this Epic"
+      placeholder: ""
   
   - type: dropdown
     id: status
