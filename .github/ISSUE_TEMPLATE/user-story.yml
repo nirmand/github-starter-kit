@@ -1,7 +1,7 @@
 name: User Story
 description: Use this template to create a User Story linked to an Epic.
 title: "[User Story] "
-labels: []
+labels: "User Story"
 assignees: []
 body:
   - type: textarea
