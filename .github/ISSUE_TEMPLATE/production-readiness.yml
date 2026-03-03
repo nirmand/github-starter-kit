@@ -1,0 +1,41 @@
+name: Production Readiness Task
+description: Standardized task for the production launch/ upgrade checklist.
+title: "[PROD]: "
+labels: ["production launch", "production update", "launch-blocker"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Production Checklist Task
+        Please fill out the details for this specific production requirement.
+  - type: dropdown
+    id: tasktype
+    attributes:
+      label: Task type
+      description: Please specify what is the type of task 
+      options:
+        - Deployment pipeline
+        - Cloud Environment and resources setup/ configuration
+        - Identity setup/ configuration
+        - Initial Data population
+        - Email Setup
+        - Testing
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Task Description
+      placeholder: Describe exactly what needs to be done...
+    validations:
+      required: true
+  - type: textarea
+    id: verification
+    attributes:
+      label: Verification Steps
+      placeholder: Describe what must be true for this to be considered "Done"?
+  - type: textarea
+    id: rollback
+    attributes:
+      label: Rollback Plan
+      placeholder: If this step fails in production, what is the immediate recovery procedure?
